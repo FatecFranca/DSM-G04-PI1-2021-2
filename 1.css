@@ -1,0 +1,98 @@
+@import url ('https://fonts.googleapis.com/css2? família=Zen+Antique+Soft&family=Zen+Old+Mincho:wght@400;700&display=swap');
+/*Váriaveis*/
+/*
+teste
+:root{
+    --cor-prim: #1E1E1E;
+    --cor-prim-clara:rgba(241, 238, 238, 0.933);
+    --cor-secun: #f7f1f1;
+    --cor-secun-clara: #808080;
+    --cor-fundo:#1E1E1E;
+    --cor-fundo-clara: #e9e3e3;
+    --cor-texto:#ebebeb;
+    --font-texto:  'Zen Old Mincho', serif;;
+    --font-titulo: 'Zen Antique Soft', serif;
+}
+*/
+/*
+teste
+body{
+    background-color: var(--cor-fundo);
+}
+teste
+* {
+    font-family: var(--font-texto)
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+*/
+
+/*TESTE
+header {
+    display: flex;
+    justify-content: center;  
+    align-items: center;  
+    background-color: var(--cor-prim);
+    min-height: 50px; 
+    flex-wrap: wrap; 
+  }
+  #img-logo {
+    background-color: transparent;
+  }
+  main {
+    display: flex;
+    justify-content: center; 
+    align-items: stretch;  
+    min-height: 200px; 
+  }
+  footer {
+    display: flex;
+    justify-content: center;  
+    align-items: center;  
+    background-color: var(--cor-fundo-clara);
+    min-height: 50px; 
+  }
+  section {
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    flex-direction: column; 
+    border: 1px solid indigo;
+    background-color: plum;
+    width: 75%;
+    margin: 5px;
+  }
+  aside {
+    display: flex;
+    justify-content: center;  
+    align-items: center;  
+    border: 1px dashed dimgray;
+    background-color: lightgrey;
+    width: 25%;
+    margin: 5px;
+  }
+  article {
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    border: 1px solid sienna;
+    background-color: linen;
+    margin: 5px;
+    min-height: 100px;
+    width: 100%;
+  }
+  */
+    /* Regras para tela com largura de até 600px 
+    @media screen and (max-width: 600px) {
+  
+        main {
+          /* muda a direção dos filhos para coluna (vertical) 
+          flex-direction: column;
+        }
+      
+        /* section e aside ficam com 100% de largura 
+        section, aside {
+          width: 100%;
+        }
+    */
