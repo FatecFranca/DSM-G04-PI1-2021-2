@@ -1,98 +1,158 @@
-@import url ('https://fonts.googleapis.com/css2? família=Zen+Antique+Soft&family=Zen+Old+Mincho:wght@400;700&display=swap');
-/*Váriaveis*/
-/*
-teste
-:root{
-    --cor-prim: #1E1E1E;
-    --cor-prim-clara:rgba(241, 238, 238, 0.933);
-    --cor-secun: #f7f1f1;
-    --cor-secun-clara: #808080;
-    --cor-fundo:#1E1E1E;
-    --cor-fundo-clara: #e9e3e3;
-    --cor-texto:#ebebeb;
-    --font-texto:  'Zen Old Mincho', serif;;
-    --font-titulo: 'Zen Antique Soft', serif;
-}
-*/
-/*
-teste
-body{
-    background-color: var(--cor-fundo);
-}
-teste
-* {
-    font-family: var(--font-texto)
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box; 
-}
-*/
+@import url('https://fonts.googleapis.com/css2?family=Zen+Antique&family=Zen+Old+Mincho:wght@400;700&display=swap');
 
-/*TESTE
+/* Variáveis */
+:root {
+  --cor-prim: #141414;
+  --cor-prim-clara: #c2c2c2;
+  --cor-fundo: #161616;
+  --cor-fundo-clara: #242323;
+  --cor-texto: #e7e1e1;
+  --fonte-texto: 'Zen Old Mincho', serif;;
+  --fonte-titulo: 'Zen Antique', serif;;
+}
+/*************************************************/
+* { 
+  font-family: var(--fonte-texto);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; 
+}
+/*************************************************/
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  background-color: var(--cor-fundo-clara);
+}
 header {
-    display: flex;
-    justify-content: center;  
-    align-items: center;  
-    background-color: var(--cor-prim);
-    min-height: 50px; 
-    flex-wrap: wrap; 
-  }
-  #img-logo {
-    background-color: transparent;
-  }
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  background-color: var(--cor-prim);
+  min-height: 50px; 
+  flex-wrap: wrap; /* Quebra de linha */
+}
+/* Logo temporário, ainda não terminamos o nosso */
+#logo { 
+  background-color: transparent;
+  width: 50px;
+  /*align-items: left;*/
+}
+#menu {
+  display: flex;
+  justify-content: center;  /* centralização horizontal */
+  align-items: center;  /* centralização vertical */
+  background-color: var(--cor-prim);
+  min-height: 25px; /* altura mínima */
+  width: 100%;
+}
+#menu ul { 
+  list-style: none; 
+  display: flex;  
+}
+#menu ul li {
+  height: 36px;
+  margin: 0 50px; /* 0 topo, fundo; 10px esquerda e direita */
+  display: flex;
+}
+#menu-principal ul li a {
+  font-family: var(--fonte-titulo);
+  height: 36px;
+  align-items: center;
+  display: flex;
+  padding: 0 10px;
+  color: white;
+  text-decoration: none;
+  background-color: var(--cor-fundo);
+  transition: 300ms; 
+}
+
+#menu ul li a:hover {
+  filter: brightness(1.2);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  background-color: var(--cor-fundo);
+  flex-wrap: wrap;
+}
+/* IMG-teste */
+#img {
+  width: 100px;
+}
+article {
+  background-color: var(--cor-fundo-clara);
+  display: flex;
+  justify-content: center;  
+  flex-wrap: wrap;
+  align-items: center; 
+  border: 1px solid #ADE9F1;
+  background-color: #F9D8EB;
+  background-color: transparent;
+  margin: 5px;
+  min-height: 100px;
+  width: 100%;
+}
+
+section > h1{
+  text-align: left;
+  width: 100%;
+  color: var(--cor-fundo);
+  font-family: var(--fonte-titulo);
+  font-style: italic;
+  font-size: 1.5rem;
+}
+aside {
+  display: flex;
+  justify-content: center;  /* centralização horizontal */
+  align-items: center;  /* centralização vertical */
+  border: 1px double dimgray;
+  background-color: lightgrey;
+  width: 25%;
+  margin: 5px;
+}
+
+
+/* MAIN TESTE*/
+
+/*main {
+  display: flex;
+  justify-content: center; 
+  align-items: stretch;  
+  min-height: 200px;
+  background-color: var(--cor-fundo);
+}*/
+
+
+
+/* fOOTER */
+footer {
+  display: flex;
+  justify-content: center;  /* centralização horizontal */
+  justify-content: space-around;  /* distribui o espaço entre os itens filhos */
+  align-items: center;  /* centralização vertical */
+  background-color: var(--cor-fundo-clara);
+  background-color: var(--cor-fundo);
+  min-height: 50px; /* altura mínima */
+  padding: 20px;
+  color: var(--cor-texto);
+}
+
+#I a:hover {
+  text-decoration: underline;
+}
+
+
+/* Regras para tela com largura de até 600px */
+@media screen and (max-width: 600px) {
   main {
-    display: flex;
-    justify-content: center; 
-    align-items: stretch;  
-    min-height: 200px; 
+    /* muda a direção dos filhos para coluna (vertical) */
+    flex-direction: column;
   }
-  footer {
-    display: flex;
-    justify-content: center;  
-    align-items: center;  
-    background-color: var(--cor-fundo-clara);
-    min-height: 50px; 
-  }
-  section {
-    display: flex;
-    justify-content: center; 
-    align-items: center;  
-    flex-direction: column; 
-    border: 1px solid indigo;
-    background-color: plum;
-    width: 75%;
-    margin: 5px;
-  }
-  aside {
-    display: flex;
-    justify-content: center;  
-    align-items: center;  
-    border: 1px dashed dimgray;
-    background-color: lightgrey;
-    width: 25%;
-    margin: 5px;
-  }
-  article {
-    display: flex;
-    justify-content: center; 
-    align-items: center;  
-    border: 1px solid sienna;
-    background-color: linen;
-    margin: 5px;
-    min-height: 100px;
+  /* section e aside ficam com 100% de largura */
+  section, aside {
     width: 100%;
   }
-  */
-    /* Regras para tela com largura de até 600px 
-    @media screen and (max-width: 600px) {
-  
-        main {
-          /* muda a direção dos filhos para coluna (vertical) 
-          flex-direction: column;
-        }
-      
-        /* section e aside ficam com 100% de largura 
-        section, aside {
-          width: 100%;
-        }
-    */
+}
