@@ -4,8 +4,8 @@
 :root {
   --cor-prim: #141414;
   --cor-prim-clara: #c2c2c2;
-  --cor-fundo: #161616;
-  --cor-fundo-clara: #242323;
+  --cor-fundo: #202020;
+  --cor-fundo-clara: #1818183;
   --cor-texto: #e7e1e1;
   --fonte-texto: 'Zen Old Mincho', serif;;
   --fonte-titulo: 'Zen Antique', serif;;
@@ -16,12 +16,13 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box; 
+  color: var(--cor-texto);
 }
 /*************************************************/
 html {
   font-size: 16px;
   scroll-behavior: smooth;
-  background-color: var(--cor-fundo-clara);
+  background-color: var(--cor-prim);
 }
 header {
   display: flex;
@@ -44,10 +45,12 @@ header {
   background-color: var(--cor-prim);
   min-height: 25px; /* altura mínima */
   width: 100%;
+  color: #f7c5e2;
+  list-style: none;
 }
 #menu ul { 
   list-style: none; 
-  display: flex;  
+  display: flex; 
 }
 #menu ul li {
   height: 36px;
@@ -60,8 +63,7 @@ header {
   align-items: center;
   display: flex;
   padding: 0 10px;
-  color: white;
-  text-decoration: none;
+  color: #F9D8EB;
   background-color: var(--cor-fundo);
   transition: 300ms; 
 }
@@ -77,10 +79,6 @@ main {
   min-height: 200px;
   background-color: var(--cor-fundo);
   flex-wrap: wrap;
-}
-/* IMG-teste */
-#img {
-  width: 100px;
 }
 article {
   background-color: var(--cor-fundo-clara);
@@ -109,7 +107,6 @@ aside {
   justify-content: center;  /* centralização horizontal */
   align-items: center;  /* centralização vertical */
   border: 1px double dimgray;
-  background-color: lightgrey;
   width: 25%;
   margin: 5px;
 }
