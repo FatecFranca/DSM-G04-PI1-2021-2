@@ -27,13 +27,12 @@ html {
 /************************************************/
 header {
   display: flex;
-  justify-content: center;  
+  /* justify-content: center; */ 
   align-items: center;
   background-color: var(--cor-prim);
   min-height: 50px; 
   flex-wrap: wrap; /* Quebra de linha */
 }
-
 /*************************************************/
 /* Logo temporário, ainda não terminamos o nosso */
 #logo { 
@@ -42,9 +41,8 @@ header {
   box-sizing: border-box; /* Inclui border e padding no tamanho do elemento */
   border: 5px solid var(--cor-prim);
   padding: 0px;
-}
-      
-/***************************************************/
+}  
+/***/
 }
 #menu {
   display: flex;
@@ -58,11 +56,12 @@ header {
 #menu ul { 
   list-style: none; 
   display: flex; 
+  font-size: 21px;
 }
 #menu ul li {
   height: 10px;
-  margin: 0 30px; /* 0 topo, fundo; 10px esquerda e direita */
-  display: flex;
+  margin: 0 40px; /* 0 topo, fundo; 10px esquerda e direita */
+  padding-top: 0.5cm;
 }
 #menu-principal ul li a {
   font-family: var(--fonte-titulo);
@@ -97,7 +96,12 @@ main {
   background-color: var(--cor-fundo);
   flex-wrap: wrap;
 }
-article {
+/***/
+section {
+  display: flex;
+  flex-wrap: wrap;
+}
+section article {
   background-color: var(--cor-fundo-clara);
   display: flex;
   justify-content: center;  
@@ -107,18 +111,42 @@ article {
   background-color: transparent;
   margin: 5px;
   min-height: 100px;
-  width: 50%;
+  width: 75%;
   flex-wrap: wrap;
 }
-section > h1{
+section h1 {
   text-align: left;
   width: 100%;
   color: var(--cor-texto);
   font-family: var(--fonte-titulo);
   font-style: italic;
-  font-size: 1.5rem;
+  font-size: 30px;
+  padding: 15px;
+}
+section p {
+  font-family: var(--fonte-texto);
+  color: var(--cor-texto);
+  padding: 15px;
+}
+.art-1 {
+  height: 350px;
+  width: 80rem;
+  padding: 15px;
+}
+.art-2 {
+  height: 200px;
+  margin: 0 50px; /* 0 topo, fundo; 10px esquerda e direita */
+  display: flex;
+}
+/***/
+anside{
+
 }
 aside article {
+}
+.art {
+  height: 300px;
+  width: 250px;
 }
 
 
