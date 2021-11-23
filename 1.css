@@ -36,6 +36,9 @@ header{
   box-shadow: 0 0 2.8px #f7c;
 }
 /* Logo temporário*/
+#icon{
+  align-items: right;
+}
 #logo{
   height: 80px;
   background-color: transparent;
@@ -47,8 +50,6 @@ header{
   display: inline-block;
   vertical-align: top;
   transition: height 1s;
-}
-#logo{
   left:0;
   position:absolute;
 }
@@ -73,7 +74,7 @@ ul li{
   padding-top: 0.5px;
 }
 ul li a{
-  background-color: transparent;
+  /*background-color: transparent;*/
   font-family: var(--fonte-titulo);
   display: flex;
   height: 60px;
@@ -83,6 +84,7 @@ ul li a{
   text-decoration: none; 
   transition: 300ms;
   padding: 3 5px;
+  z-index: 1;
 }
 a:visited {
   color: #F9D8EB;
@@ -159,7 +161,7 @@ aside{
   background-color: #F9D8EB;
   background-color: transparent;
   margin: 5px;
-  min-height: 818px;
+  min-height: 842px;
   width: 18%;
   box-shadow: 0 0 2.8px rgb(184, 227, 233);
 }
