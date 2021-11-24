@@ -44,8 +44,8 @@ header{
   background-color: transparent;
   box-sizing: border-box;
   margin: 9px;
-  box-shadow: 0 0 5px #aaa;
-  padding: 1px 1px 1px 1px;
+  box-shadow: 0 0 5px rgb(236, 157, 232);
+  padding: 0.5px 0.5px 0.5px 0.5px;
   vertical-align: top;
   display: inline-block;
   vertical-align: top;
@@ -109,16 +109,12 @@ main{
   display: flex;
   flex-wrap: wrap;
   background-color: var(--cor-fundo-clara);
-  display: flex;
   justify-content: center;  
   align-items: center; 
   border: 1px solid #ADE9F1;
-  background-color: #F9D8EB;
-  background-color: transparent;
   margin: 5px;
   min-height: 100px;
   width: 80%;
-  flex-wrap: wrap;
   box-shadow: 0 0 2.8px rgb(184, 227, 233);
 }
 #sec1 article{
@@ -133,6 +129,35 @@ main{
   font-size: 1.5rem;
   padding: 12px;
 }
+/*Estilo da página Comunidade*******************************************************/
+#comunidade-h1{
+  text-align: center;
+  width: 100%;
+  color: var(--cor-texto);
+  font-family: var(--fonte-titulo);
+  font-style: italic;
+  font-size: 1.5rem;
+  padding: 12px;
+}
+#comunidade-icon{
+  display: block;
+  margin-left: 40%;
+  margin-right: -50%;
+  border: 5px solid transparent;
+}
+.comunidade{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--cor-fundo-clara);
+  justify-content: center;  
+  align-items: center; 
+  border: 1px solid #ADE9F1;
+  margin: 5px;
+  min-height: 100px;
+  width: 80%;
+  box-shadow: 0 0 2.8px rgb(184, 227, 233);
+}
+/*Estilo da página Comunidade ^ ****************************************************/
 #p{
   font-family: var(--fonte-texto);
   color: var(--cor-texto);
@@ -158,8 +183,6 @@ aside{
   margin: 20px;
   display: flex;
   border: 1px solid #ADE9F1;
-  background-color: #F9D8EB;
-  background-color: transparent;
   margin: 5px;
   min-height: 842px;
   width: 18%;
@@ -177,26 +200,60 @@ aside article{
 /****************************************************************/
 footer{
   display: flex;
-  min-height: 10px;
+  min-height: 25px;
   border-bottom: 0.5px solid #f7c5e2;
-  box-shadow: 0 0 2.8px #f7c;
+  box-shadow: 0 0.5px #f7c;
+  flex-wrap: wrap;
+  font-family: var(--fonte-texto);
+  font-size: 15px;
 }
 #sec2{
-  display: flex;
+  color: var(--cor-texto); 
+  text-decoration: none; 
+  transition: 300ms;
+  /*padding: 3 5px;*/
 }
-#sec2 div{
-  display: flex;
+.Info{
+  text-decoration: none;
+  vertical-align: top;
+  display: inline-block;
+  vertical-align: top;
+  left: 79rem;;
+  position:absolute;
+  justify-content: left;
+  background-color: transparent;
+  box-sizing: border-box;
+  margin: 15px;
+  padding-top: 15px;
 }
-#sec2 div a{
-  display: flex;
+.Social{
+  text-decoration: none;
+  vertical-align: top;
+  display: inline-block;
+  vertical-align: top;
+  left: 74rem;;
+  position:absolute;
+  justify-content: left;
+  background-color: transparent;
+  box-sizing: border-box;
+  margin: 15px;
+  padding-top: 15px;
 }
-#sec2 address{
-  display: flex;
+address{
+  color:var(--cor-texto); 
+  text-decoration: none; 
+  transition: 300ms;
+  vertical-align: top;
+  display: inline-block;
+  vertical-align: top;
+  left: 5px;
+  position:absolute;
+  justify-content: left;
+  border: 5px solid transparent;
+  background-color: transparent;
+  margin: 15px;
+  padding-top: 15px;
 }
-#sec2 address a{
-  display: flex;
-}
-
 /*********/
 /* Regras para tela com largura de até 600px */
 @media screen and (max-width: 600px) {
