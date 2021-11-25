@@ -113,6 +113,7 @@ main{
   width: 70%;
   box-shadow: 0 0 2.8px rgb(138, 228, 240);
   padding: 10 1px;
+  border-radius: 0.5%;
 }
 #sec1 article{
   flex-direction: column;
@@ -153,6 +154,7 @@ main{
   min-height: 100px;
   width: 80%;
   box-shadow: 0 0 2.8px rgb(184, 227, 233);
+  border-radius: 0.5%;
 }
 /*Estilo da página Comunidade ^ ****************************************************/
 #p{
