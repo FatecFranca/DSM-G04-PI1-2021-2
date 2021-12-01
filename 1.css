@@ -63,6 +63,25 @@ header{
   left: 50px;
   position:absolute;
 }
+#h1{
+    justify-content: center;
+    width: 100%;
+    color: var(--cor-texto);
+    font-family: var(--fonte-titulo);
+    font-style: italic;
+    font-size: 1.5rem;
+    padding: 15px;
+}
+#h2{
+    text-align: left;
+    width: 100%;
+    color: var(--cor-prim);
+    font-family: var(--fonte-titulo);
+    font-style: italic;
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-left: 2%;
+}
 /**/
 nav{
   background-color: var(--cor-prim);
@@ -124,13 +143,13 @@ main{
   background-color: var(--cor-fundo-clara);
   justify-content: center;  
   align-items: center; 
-  border: 1px solid #ADE9F1;
-  margin: 0px;
+  border: 1px solid #040505;
+  margin: 20px 0px;
   min-height: 100px;
   width: 70%;
-  box-shadow: 0 0 3px rgb(125, 153, 156);
+  box-shadow: 0 0 5px rgb(4, 5, 5);
   padding: 10 1px;
-  border-radius: 0.5%;
+  border-radius: 15px;
 }
 #sec1 article{
   flex-direction: column;
@@ -180,7 +199,7 @@ main{
 }
 #comunidade-icon{
   display: block;
-  margin-left: 55%;
+  margin-left: 50%;
   margin-right: 50%;
   border: 5px solid transparent;
   justify-content: center;
@@ -212,8 +231,8 @@ main{
 }
 /* Provisório */
 .art-2{
-  height: 200px;
-  margin: 0 50px; /* 0 topo, fundo; 10px esquerda e direita */
+  height: 225px;
+  margin: 25% 35%; /* 0 topo, fundo; 10px esquerda e direita */
   /*display: flex;*/
 }
 /**/
@@ -237,6 +256,7 @@ aside article{
   width: 310px;
   margin: 6px;
   box-shadow: 0 0 10px rgb(0, 0, 0);
+  border-radius: 10px;
 }
 /*ESTILO DA PAGINA DESENVOLVEDORAS ***************************************************************/
 #Desenvolvedoras-h1{
